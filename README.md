@@ -51,7 +51,7 @@
 > repositório GitHub.
 
 # Questão 06
-> explique o que cada um dos kernels acima, por si só, está fazendo.
+> Explique o que cada um dos kernels acima, por si só, está fazendo.
 > Tente executar mostrar nos resultados dessas correlações intermediárias para ter
 > uma noção do que está acontecendo aqui.
 > Implemente o detector de bordas como o método bordas dentro da classe
