@@ -11,9 +11,11 @@
 > Se você passar essa imagem pelo filtro de inversão, qual seria o
 > output esperado? Justifique sua resposta.
 
-~~~
-Resposta:
-~~~
+
+Resposta: <br>
+O resultado será [226, 166, 119, 55], pois após passarem por esta função:
+![image](https://github.com/pedroxcardoso/uvv_lp_cc3m/assets/103221067/d530cbe3-b3a9-421f-9e16-f6a23d3f2329) <br>
+Cada um dos 4 números ira se subtrair de 255.
 
 ## Questão 02
 > Faça a depuração e, quando terminar, seu código deve conseguir
@@ -23,63 +25,69 @@ Resposta:
 > test_images/bluegill.png, salve o resultado como uma imagem PNG e
 > salve a imagem em seu repositório GitHub.
 
-~~~
-Resposta:
-~~~
+
+Resposta: <br>
+![image](https://github.com/pedroxcardoso/uvv_lp_cc3m/assets/103221067/c82418ee-dd6a-4e95-a707-7158fafc0adc) <br>
+Resultado: <br>
+![bluegill_invertida](https://github.com/pedroxcardoso/uvv_lp_cc3m/assets/103221067/aa2679bf-cb5c-4e8f-9217-45787b722f08)
+
 
 ## Questão 03
 > Considere uma etapa de correlacionar uma imagem com o seguinte
 > kernel:
 >
-> ...
+> 0.00 -0.07 0.00 <br>
+> -0.45 1.20 -0.25 <br>
+> 0.00 -0.12 0.00 <br>
 >
 > Qual será o valor do pixel na imagem de saída no local indicado pelo destaque
 > vermelho? Observe que neste ponto ainda não arredondamos ou recortamos o valor, informe exatamente como você calculou. Observação: demonstre passo a passo
 > os cálculos realizados.
 
 ~~~
-Resposta:
+Resposta: O resultado será 32,76.
 ~~~
+Ao multiplicarmos cada um dos "quadrados" por seus kernels, chegaremos no seguinte cálculo: <br>
+(80 * 0) + (53 * - 0,07) + (99 * 0) + <br>
+(129 * - 0,45) + (127 * 1,20) + (148 * -0,25) + <br>
+(175 * 0) + (174 * - 0,12) + (193 * 0) <br>
+= 32,76.
 
 ## Questão 04
 > Quando você tiver implementado seu código, tente executá-lo em
 > test_images/pigbird.png com o seguinte kernel 9 × 9:
 
-~~~
-Resposta:
-~~~
+Resposta: <br>
+![image](https://github.com/pedroxcardoso/uvv_lp_cc3m/assets/103221067/19898256-68ad-4e08-a5a6-44408b65a0d6) <br>
+Resultado: <br>
+![pigbird2](https://github.com/pedroxcardoso/uvv_lp_cc3m/assets/103221067/98e8758a-e8f0-4699-bdff-b814fe6a70d2)
+
 
 ## Questão 05
-> Se quisermos usar uma versão desfocada B que foi feita com um
+> se quisermos usar uma versão desfocada B que foi feita com um
 > kernel de desfoque de caixa de 3 × 3, que kernel k poderíamos usar para calcular
 > toda a imagem nítida com uma única correlação? Justifique sua resposta mostrando
 > os cálculos.
-> Implemente uma máscara de não nitidez como o método focada da classe
-> Imagem, onde n denota o tamanho do kernel de desfoque que deve ser usado para
-> gerar a cópia desfocada da imagem. Este método deve retornar uma nova imagem mais nítida. 
-> Você pode implementar isso como uma correlação única ou usando
-> uma subtração explícita, mas se você usar uma subtração explícita, certifique-se de
-> não fazer nenhum arredondamento até o final (a versão desfocada intermediária não
-> deve ser arredondada ou cortada de forma alguma.
-> Quando terminar e seu código passar nos testes relacionados à nitidez, execute
-> seu filtro de nitidez na imagem test_images/python.png usando um kernel
-> de tamanho 11, salve o resultado como uma imagem PNG e faça o upload no seu
-> repositório GitHub.
 
-~~~
-Resposta:
-~~~
+Resposta: <br>
+
 
 # Questão 06
 > Explique o que cada um dos kernels acima, por si só, está fazendo.
 > Tente executar mostrar nos resultados dessas correlações intermediárias para ter
 > uma noção do que está acontecendo aqui.
-> Implemente o detector de bordas como o método bordas dentro da classe
-> Imagem. O método deve retornar uma nova instância de Imagem resultante das
-> operações acima.
-> Quando terminar e seu código passar nos testes de detecção de borda, execute
-> seu detector de borda na imagem test_images/construct.png, salve o resultado como uma imagem PNG e faça o upload para seu repositório GitHub.
 
-~~~
-Resposta:
-~~~
+Resposta: <br>
+Código: <br>
+![image](https://github.com/pedroxcardoso/uvv_lp_cc3m/assets/103221067/dae8e651-8032-49aa-8f57-2c4e5ae474c0) <br>
+
+Imagem Kx: <br>
+![construct_Kx](https://github.com/pedroxcardoso/uvv_lp_cc3m/assets/103221067/16da8d87-6eae-4fff-bc27-360623073a42) <br>
+
+Imagem Ky: <br>
+![construct_Ky](https://github.com/pedroxcardoso/uvv_lp_cc3m/assets/103221067/8d255ded-1752-487b-ae40-efce6f2804a4) <br>
+
+Imagem com ambos aplicados: <br>
+![construct_Final](https://github.com/pedroxcardoso/uvv_lp_cc3m/assets/103221067/8f4d1d8c-b68a-4c0a-8f57-686286b18ceb) <br>
+
+
