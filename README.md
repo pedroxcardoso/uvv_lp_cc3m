@@ -11,6 +11,10 @@
 > Se você passar essa imagem pelo filtro de inversão, qual seria o
 > output esperado? Justifique sua resposta.
 
+~~~
+Resposta:
+~~~
+
 ## Questão 02
 > Faça a depuração e, quando terminar, seu código deve conseguir
 > passar em todos os testes do grupo de teste TestInvertida 
@@ -18,6 +22,10 @@
 > Execute seu filtro de inversão na imagem
 > test_images/bluegill.png, salve o resultado como uma imagem PNG e
 > salve a imagem em seu repositório GitHub.
+
+~~~
+Resposta:
+~~~
 
 ## Questão 03
 > Considere uma etapa de correlacionar uma imagem com o seguinte
@@ -29,9 +37,17 @@
 > vermelho? Observe que neste ponto ainda não arredondamos ou recortamos o valor, informe exatamente como você calculou. Observação: demonstre passo a passo
 > os cálculos realizados.
 
+~~~
+Resposta:
+~~~
+
 ## Questão 04
 > Quando você tiver implementado seu código, tente executá-lo em
 > test_images/pigbird.png com o seguinte kernel 9 × 9:
+
+~~~
+Resposta:
+~~~
 
 ## Questão 05
 > Se quisermos usar uma versão desfocada B que foi feita com um
@@ -50,6 +66,10 @@
 > de tamanho 11, salve o resultado como uma imagem PNG e faça o upload no seu
 > repositório GitHub.
 
+~~~
+Resposta:
+~~~
+
 # Questão 06
 > Explique o que cada um dos kernels acima, por si só, está fazendo.
 > Tente executar mostrar nos resultados dessas correlações intermediárias para ter
@@ -60,3 +80,6 @@
 > Quando terminar e seu código passar nos testes de detecção de borda, execute
 > seu detector de borda na imagem test_images/construct.png, salve o resultado como uma imagem PNG e faça o upload para seu repositório GitHub.
 
+~~~
+Resposta:
+~~~
