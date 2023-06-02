@@ -70,9 +70,11 @@ Resultado: <br>
 > os cálculos.
 
 Resposta: <br>
+![image](https://github.com/pedroxcardoso/uvv_lp_cc3m/assets/103221067/b29aac24-07b3-4921-adec-7fd5479d3a53)
+Resultado: <br>
+![python_focada](https://github.com/pedroxcardoso/uvv_lp_cc3m/assets/103221067/b98a8f84-4e95-4450-8b40-b62248b23d80)
 
-
-# Questão 06
+## Questão 06
 > Explique o que cada um dos kernels acima, por si só, está fazendo.
 > Tente executar mostrar nos resultados dessas correlações intermediárias para ter
 > uma noção do que está acontecendo aqui.
